@@ -135,11 +135,6 @@
     let links = document.createElement('div');
     links.classList.add('links');
 
-    let sourceLink = document.createElement('a');
-    sourceLink.href = 'https://github.com/immersive-web/webxr-samples/blob/master/' + page.path;
-    sourceLink.textContent = 'Source';
-    links.appendChild(sourceLink);
-
     // Adding the "Run Without Polyfill" link
     let polyfillLink = document.createElement('a');
     polyfillLink.href = page.path + '?usePolyfill=0';
