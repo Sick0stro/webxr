@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/pygment_trac.css">
 
+  <!-- SDK Key -->
+  <script src="https://launchar.app/sdk/v1?key=7LQd5lMdF6kfFxQMrRK3MxS9OuTOZjP0&redirect=true"></script>
+
   <style>
     article {
       position: relative;
@@ -134,6 +137,11 @@
 
     let links = document.createElement('div');
     links.classList.add('links');
+
+    let sourceLink = document.createElement('a');
+    sourceLink.href = 'https://github.com/immersive-web/webxr-samples/blob/master/' + page.path;
+    sourceLink.textContent = 'Source';
+    links.appendChild(sourceLink);
 
     // Adding the "Run Without Polyfill" link
     let polyfillLink = document.createElement('a');
